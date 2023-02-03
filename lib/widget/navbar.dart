@@ -1,3 +1,4 @@
+import 'package:ewallet/color.dart';
 import 'package:flutter/material.dart';
 
 class Navbar extends StatelessWidget {
@@ -66,14 +67,13 @@ class BottomNavItem extends StatelessWidget {
         children: [
           Icon(
             icn,
-            color: isActive ? Colors.greenAccent : Colors.grey,
+            color: isActive ? warna : Colors.grey,
             size: 20,
           ),
           Text(
             title,
-            style: TextStyle(
-                color: isActive ? Colors.greenAccent : Colors.grey,
-                fontSize: 10),
+            style:
+                TextStyle(color: isActive ? warna : Colors.grey, fontSize: 10),
           )
         ],
       ),

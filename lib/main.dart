@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'package:ewallet/color.dart';
 import 'package:flutter/cupertino.dart';
 
 import './widget/view_card.dart';
@@ -36,18 +37,26 @@ class _MyHomePageState extends State<MyHomePage> {
     var size = MediaQuery.of(context).size;
     return Scaffold(
         body: Container(
-          padding: EdgeInsets.all(5),
           height: size.height,
           width: double.infinity,
-          decoration: BoxDecoration(
-            color: Colors.white,
-          ),
           child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                First_Widget(),
-                AbsensiCard(),
+                Container(
+                  padding: EdgeInsets.only(top: 20),
+                  height: 302,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage("Asset/img/bg.png"),
+                        fit: BoxFit.fitWidth,
+                        scale: 20,
+                        alignment: Alignment.topCenter),
+                  ),
+                  child: Column(
+                    children: [First_Widget(), AbsensiCard()],
+                  ),
+                ),
                 JadwalCard(),
                 Container(
                   width: double.infinity,
@@ -73,11 +82,11 @@ class _MyHomePageState extends State<MyHomePage> {
                               style: TextStyle(
                                 fontSize: 11,
                                 decoration: TextDecoration.underline,
-                                decorationColor: Colors.green,
+                                decorationColor: warna,
                                 decorationThickness: 4,
                               ),
                             ),
-                            style: TextButton.styleFrom(primary: Colors.green),
+                            style: TextButton.styleFrom(primary: warna),
                           )
                         ],
                       ),

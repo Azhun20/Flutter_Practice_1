@@ -1,3 +1,4 @@
+import 'package:ewallet/color.dart';
 import 'package:flutter/material.dart';
 
 class AbsensiCard extends StatelessWidget {
@@ -8,7 +9,7 @@ class AbsensiCard extends StatelessWidget {
     return Container(
       width: double.infinity,
       height: 145,
-      margin: EdgeInsets.only(left: 18, right: 18, top: 30, bottom: 6),
+      margin: EdgeInsets.only(left: 18, right: 18, top: 20, bottom: 6),
       decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(14),
@@ -28,7 +29,7 @@ class AbsensiCard extends StatelessWidget {
               children: [
                 Icon(
                   Icons.date_range_outlined,
-                  color: Colors.green,
+                  color: warna,
                   size: 14.0,
                 ),
                 Text(
@@ -83,7 +84,7 @@ class AbsensiCard extends StatelessWidget {
                     children: [
                       Icon(
                         Icons.fingerprint,
-                        color: Colors.green,
+                        color: warna,
                         size: 30.0,
                       ),
                       RichText(
@@ -93,7 +94,7 @@ class AbsensiCard extends StatelessWidget {
                             TextSpan(
                                 text: '07.00',
                                 style: TextStyle(
-                                    color: Colors.green,
+                                    color: warna,
                                     fontSize: 12,
                                     fontWeight: FontWeight.bold)),
                             TextSpan(
@@ -107,7 +108,7 @@ class AbsensiCard extends StatelessWidget {
                       onPressed: () {},
                       child: Text(
                         'History Absensi',
-                        style: TextStyle(color: Colors.green, fontSize: 12),
+                        style: TextStyle(color: warna, fontSize: 12),
                       ))
                 ],
               ),

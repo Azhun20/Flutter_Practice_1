@@ -1,3 +1,4 @@
+import 'package:ewallet/color.dart';
 import 'package:flutter/material.dart';
 
 class First_Widget extends StatelessWidget {
@@ -8,45 +9,57 @@ class First_Widget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(top: 20, left: 5, right: 5),
+      padding: const EdgeInsets.only(top: 10, left: 5, right: 5, bottom: 10),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
           Container(
             padding: const EdgeInsets.only(right: 10),
             child: const CircleAvatar(
-              backgroundColor: Colors.green,
+              radius: 28,
+              backgroundColor: Colors.white,
+              child: CircleAvatar(
+                radius: 26,
+                backgroundImage: AssetImage('Asset/img/icnPP.jpg'),
+              ),
             ),
           ),
-          RichText(
-            text: TextSpan(
-                style: Theme.of(context).textTheme.displaySmall,
-                children: const [
-                  TextSpan(
-                      text: 'Robert Pattinson\n',
-                      style: TextStyle(fontSize: 14, color: Colors.white)),
-                  TextSpan(
-                      text: '9522382\n',
-                      style: TextStyle(fontSize: 10, color: Colors.white)),
-                  TextSpan(
-                      text: 'Pondok Surriyah Alfiah',
-                      style: TextStyle(fontSize: 10, color: Colors.white)),
-                ]),
+          Container(
+            height: 50,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('Robert Pattinson',
+                    style: TextStyle(fontSize: 14, color: Colors.white)),
+                Text('9522382',
+                    style: TextStyle(fontSize: 10, color: Colors.white)),
+                Text('Pondok Surriyah Alfiah',
+                    style: TextStyle(fontSize: 10, color: Colors.white))
+              ],
+            ),
           ),
           Container(
             padding: const EdgeInsets.all(5),
-            margin: const EdgeInsets.only(right: 20, left: 50),
+            margin: const EdgeInsets.only(
+              right: 20,
+              left: 50,
+              top: 20,
+              bottom: 20,
+            ),
+            height: 40,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(5), color: Colors.white),
             child: Column(
               children: const [
                 Icon(
                   Icons.wallet,
-                  color: Colors.green,
+                  color: warna,
+                  size: 20,
                 ),
                 Text(
                   'E-Wallet',
-                  style: TextStyle(fontSize: 10, color: Colors.green),
+                  style: TextStyle(fontSize: 8, color: warna),
                 )
               ],
             ),

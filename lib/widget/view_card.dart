@@ -1,3 +1,4 @@
+import 'package:ewallet/color.dart';
 import 'package:flutter/material.dart';
 
 class ViewCard extends StatelessWidget {
@@ -45,7 +46,7 @@ class ViewCard extends StatelessWidget {
                     borderRadius: BorderRadius.only(
                         bottomRight: Radius.circular(12),
                         bottomLeft: Radius.circular(12)),
-                    color: Color.fromARGB(255, 1, 141, 94)),
+                    color: warna),
                 child: Text(
                   title,
                   style: TextStyle(
@@ -63,10 +64,10 @@ class ViewCard extends StatelessWidget {
         left: 0,
         child: CircleAvatar(
           radius: 16,
-          backgroundColor: Color.fromARGB(255, 1, 141, 94),
+          backgroundColor: warna,
           child: CircleAvatar(
             radius: 14,
-            foregroundColor: Color.fromARGB(255, 1, 141, 94),
+            foregroundColor: warna,
             backgroundColor: Colors.white,
             child: Icon(
               icn,

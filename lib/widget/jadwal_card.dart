@@ -1,3 +1,4 @@
+import 'package:ewallet/color.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -39,9 +40,9 @@ class _JadwalCardState extends State<JadwalCard> {
                   child: Align(
                     alignment: Alignment.bottomLeft,
                     child: TabBar(
-                        labelColor: Colors.greenAccent,
+                        labelColor: warna,
                         unselectedLabelColor: Colors.black,
-                        indicatorColor: Colors.greenAccent,
+                        indicatorColor: warna,
                         labelStyle: TextStyle(fontSize: 11),
                         labelPadding: EdgeInsets.only(top: 0, bottom: 0),
                         indicatorWeight: 3,
