@@ -1,3 +1,4 @@
+import 'package:ewallet/color.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import '../../models/list_tab.dart';
@@ -44,8 +45,7 @@ class _Tab3State extends State<Tab3> {
             margin: EdgeInsets.only(top: 15, bottom: 10),
             width: double.infinity,
             decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(5),
-                color: Color.fromARGB(255, 1, 141, 94)),
+                borderRadius: BorderRadius.circular(5), color: warna),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -59,12 +59,11 @@ class _Tab3State extends State<Tab3> {
                     onPressed: () {},
                     label: Text(
                       'Semua Tanggal',
-                      style: TextStyle(
-                          fontSize: 11, color: Color.fromARGB(255, 1, 141, 94)),
+                      style: TextStyle(fontSize: 11, color: warna),
                     ),
                     icon: Icon(
                       CupertinoIcons.chevron_down,
-                      color: Color.fromARGB(255, 1, 141, 94),
+                      color: warna,
                       size: 12,
                     ),
                     style: ElevatedButton.styleFrom(

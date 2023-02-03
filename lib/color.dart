@@ -1,3 +1,3 @@
 import 'package:flutter/material.dart';
 
-const warna = Color.fromARGB(255, 1, 141, 94);
+const warna = Color.fromARGB(255, 22, 160, 133);

@@ -73,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         children: [
                           Text(
                             'Rekap kehadiran kamu pada bulan',
-                            style: TextStyle(fontSize: 10, color: Colors.grey),
+                            style: TextStyle(fontSize: 12, color: Colors.grey),
                           ),
                           TextButton(
                             onPressed: () {},
