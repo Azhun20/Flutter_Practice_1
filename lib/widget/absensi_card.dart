@@ -8,8 +8,8 @@ class AbsensiCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 145,
-      margin: EdgeInsets.only(left: 18, right: 18, top: 20, bottom: 6),
+      height: 160,
+      margin: EdgeInsets.only(left: 18, right: 18, top: 20),
       decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(14),

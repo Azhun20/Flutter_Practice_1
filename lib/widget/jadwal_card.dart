@@ -18,8 +18,8 @@ class _JadwalCardState extends State<JadwalCard> {
         DefaultTabController(
           length: 3,
           child: Container(
-            height: 370,
-            padding: EdgeInsets.only(top: 20),
+            height: 385,
+            padding: EdgeInsets.only(top: 15, bottom: 5),
             width: double.infinity,
             margin: EdgeInsets.only(left: 20, right: 20),
             child: Scaffold(
@@ -33,12 +33,11 @@ class _JadwalCardState extends State<JadwalCard> {
                 ),
                 backgroundColor: Colors.white,
                 titleSpacing: 2,
-                toolbarHeight: 20,
-                elevation: 2,
+                toolbarHeight: 22,
                 bottom: PreferredSize(
                   preferredSize: Size.fromHeight(40),
                   child: Align(
-                    alignment: Alignment.bottomLeft,
+                    alignment: Alignment.topLeft,
                     child: TabBar(
                         labelColor: warna,
                         unselectedLabelColor: Colors.black,

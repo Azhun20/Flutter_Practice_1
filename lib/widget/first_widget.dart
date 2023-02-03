@@ -31,7 +31,10 @@ class First_Widget extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text('Robert Pattinson',
-                    style: TextStyle(fontSize: 14, color: Colors.white)),
+                    style: TextStyle(
+                        fontSize: 14,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold)),
                 Text('9522382',
                     style: TextStyle(fontSize: 10, color: Colors.white)),
                 Text('Pondok Surriyah Alfiah',

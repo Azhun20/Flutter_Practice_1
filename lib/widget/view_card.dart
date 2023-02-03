@@ -11,7 +11,7 @@ class ViewCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(children: [
       Container(
-          height: 80,
+          height: 81,
           padding: EdgeInsets.only(top: 20),
           margin: EdgeInsets.only(top: 15, left: 10, right: 10),
           width: 80,

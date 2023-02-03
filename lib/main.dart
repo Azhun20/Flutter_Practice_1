@@ -44,8 +44,8 @@ class _MyHomePageState extends State<MyHomePage> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Container(
-                  padding: EdgeInsets.only(top: 20),
-                  height: 302,
+                  padding: EdgeInsets.only(top: 30),
+                  height: 312,
                   decoration: BoxDecoration(
                     image: DecorationImage(
                         image: AssetImage("Asset/img/bg.png"),
@@ -86,8 +86,9 @@ class _MyHomePageState extends State<MyHomePage> {
                                 decorationThickness: 4,
                               ),
                             ),
-                            style: TextButton.styleFrom(primary: warna),
-                          )
+                            style: TextButton.styleFrom(
+                                primary: warna, padding: EdgeInsets.all(0)),
+                          ),
                         ],
                       ),
                       Row(
