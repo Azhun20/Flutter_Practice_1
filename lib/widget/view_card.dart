@@ -5,17 +5,21 @@ class ViewCard extends StatelessWidget {
   final int jumlah;
   final String title;
   final IconData icn;
-  ViewCard({required this.jumlah, required this.title, required this.icn});
+  const ViewCard(
+      {super.key,
+      required this.jumlah,
+      required this.title,
+      required this.icn});
 
   @override
   Widget build(BuildContext context) {
     return Stack(children: [
       Container(
           height: 81,
-          padding: EdgeInsets.only(top: 20),
-          margin: EdgeInsets.only(top: 15, left: 10, right: 10),
+          padding: const EdgeInsets.only(top: 20),
+          margin: const EdgeInsets.only(top: 15, left: 10, right: 10),
           width: 80,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
               borderRadius: BorderRadius.only(
                   bottomRight: Radius.circular(12),
                   bottomLeft: Radius.circular(12),
@@ -29,27 +33,28 @@ class ViewCard extends StatelessWidget {
                   text: TextSpan(children: [
                     TextSpan(
                         text: jumlah.toString(),
-                        style: TextStyle(
+                        style: const TextStyle(
                             fontSize: 14,
                             color: Colors.black,
                             fontWeight: FontWeight.bold)),
-                    TextSpan(
+                    const TextSpan(
                         text: '\nhari',
                         style: TextStyle(fontSize: 10, color: Colors.black54))
                   ])),
               Container(
                 height: 23,
-                padding: EdgeInsets.only(top: 5, left: 5, right: 5, bottom: 5),
-                margin: EdgeInsets.only(top: 10),
+                padding:
+                    const EdgeInsets.only(top: 5, left: 5, right: 5, bottom: 5),
+                margin: const EdgeInsets.only(top: 10),
                 width: 80,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     borderRadius: BorderRadius.only(
                         bottomRight: Radius.circular(12),
                         bottomLeft: Radius.circular(12)),
                     color: warna),
                 child: Text(
                   title,
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontSize: 12,
                       color: Colors.white,
                       fontWeight: FontWeight.bold),

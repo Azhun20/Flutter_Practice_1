@@ -1,10 +1,10 @@
 import 'package:ewallet/color.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import '../widget/tabJadwal/tab3.dart';
 
 class JadwalCard extends StatefulWidget {
+  const JadwalCard({super.key});
+
   @override
   State<JadwalCard> createState() => _JadwalCardState();
 }
@@ -19,12 +19,12 @@ class _JadwalCardState extends State<JadwalCard> {
           length: 3,
           child: Container(
             height: 385,
-            padding: EdgeInsets.only(top: 15, bottom: 5),
+            padding: const EdgeInsets.only(top: 15, bottom: 5),
             width: double.infinity,
-            margin: EdgeInsets.only(left: 20, right: 20),
+            margin: const EdgeInsets.only(left: 20, right: 20),
             child: Scaffold(
               appBar: AppBar(
-                title: Text(
+                title: const Text(
                   'Jadwal mengajar saya',
                   style: TextStyle(
                       color: Colors.black,
@@ -34,7 +34,7 @@ class _JadwalCardState extends State<JadwalCard> {
                 backgroundColor: Colors.white,
                 titleSpacing: 2,
                 toolbarHeight: 22,
-                bottom: PreferredSize(
+                bottom: const PreferredSize(
                   preferredSize: Size.fromHeight(40),
                   child: Align(
                     alignment: Alignment.topLeft,

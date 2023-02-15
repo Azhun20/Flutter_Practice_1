@@ -1,8 +1,8 @@
 import 'package:ewallet/color.dart';
 import 'package:flutter/material.dart';
 
-class First_Widget extends StatelessWidget {
-  const First_Widget({
+class FirstWidget extends StatelessWidget {
+  const FirstWidget({
     Key? key,
   }) : super(key: key);
 
@@ -29,7 +29,7 @@ class First_Widget extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
+              children: const [
                 Text('Robert Pattinson',
                     style: TextStyle(
                         fontSize: 14,

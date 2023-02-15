@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'E-Wallet',
       debugShowCheckedModeBanner: false,
       home: MyHomePage(),
@@ -44,9 +44,9 @@ class _MyHomePageState extends State<MyHomePage> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Container(
-                  padding: EdgeInsets.only(top: 30),
+                  padding: const EdgeInsets.only(top: 30),
                   height: 312,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     image: DecorationImage(
                         image: AssetImage("Asset/img/bg.png"),
                         fit: BoxFit.fitWidth,
@@ -54,30 +54,34 @@ class _MyHomePageState extends State<MyHomePage> {
                         alignment: Alignment.topCenter),
                   ),
                   child: Column(
-                    children: [First_Widget(), AbsensiCard()],
+                    children: [FirstWidget(), AbsensiCard()],
                   ),
                 ),
                 JadwalCard(),
                 Container(
                   width: double.infinity,
-                  margin: EdgeInsets.only(left: 20, right: 20, bottom: 20),
+                  margin:
+                      const EdgeInsets.only(left: 20, right: 20, bottom: 20),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      const Text(
                         'Rekap Keseluruhan',
                         style: TextStyle(fontWeight: FontWeight.bold),
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
-                          Text(
+                          const Text(
                             'Rekap kehadiran kamu pada bulan',
                             style: TextStyle(fontSize: 12, color: Colors.grey),
                           ),
                           TextButton(
                             onPressed: () {},
-                            child: Text(
+                            style: TextButton.styleFrom(
+                                foregroundColor: warna,
+                                padding: const EdgeInsets.all(0)),
+                            child: const Text(
                               'Juni',
                               style: TextStyle(
                                 fontSize: 11,
@@ -86,8 +90,6 @@ class _MyHomePageState extends State<MyHomePage> {
                                 decorationThickness: 4,
                               ),
                             ),
-                            style: TextButton.styleFrom(
-                                primary: warna, padding: EdgeInsets.all(0)),
                           ),
                         ],
                       ),
